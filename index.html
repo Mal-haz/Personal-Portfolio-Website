@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Muhammad Kamal Hazman Bin Mohd Othman - Network Computing Student & Web Developer">
+    <title>Muhammad Kamal Hazman | Portfolio</title>
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Persistent Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Kamal Hazman Home">Kamal.dev</a>
+            
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- JS Feature 1: Dark/Light Mode Toggle Button -->
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark and light theme">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">MUHAMMAD KAMAL HAZMAN</h1>
+                <p class="hero-subtitle">Year 3 Network Computing Student &amp; <span id="typewriter" class="typewriter-text"></span></p>
+                <p class="hero-tagline">Building web solutions and practicing server infrastructure.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <!-- JS Feature 10: Dynamic Content Tab Switcher -->
+                <div class="tab-controls" role="tablist" aria-label="About Me Tabs">
+                    <button class="tab-btn active" data-tab="bio" role="tab" aria-selected="true" id="tab-bio">Background</button>
+                    <button class="tab-btn" data-tab="education" role="tab" aria-selected="false" id="tab-education">Education</button>
+                    <button class="tab-btn" data-tab="interests" role="tab" aria-selected="false" id="tab-interests">Interests &amp; Hobbies</button>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <!-- Bio Tab Panel -->
+                    <div id="bio" class="tab-panel active" role="tabpanel" aria-labelledby="tab-bio">
+                        <p class="bio-text">
+                            Hello, I am Muhammad Kamal, based in Selangor and currently studying Network Computing. I am deeply interested in cybersecurity, system development, and modern computer science innovations. Beyond technical subjects, I also enjoy learning about personal finance management and smart investing strategies. The rapid evolution of technology inspires me to continuously learn and expand my capabilities.
+                        </p>
+                        <p class="bio-text">
+                            I am a passionate and dedicated student with a strong drive to continuously improve my technical skills and practical knowledge in network infrastructure, server management, and full-stack web applications.
+                        </p>
+                    </div>
+
+                    <!-- Education Tab Panel -->
+                    <div id="education" class="tab-panel" role="tabpanel" aria-labelledby="tab-education">
+                        <ul class="timeline-list">
+                            <li class="timeline-item">
+                                <h3>Bachelor of Computer Science (Network Computing)</h3>
+                                <p class="institution">Universiti Malaysia Sarawak (UNIMAS)</p>
+                                <span class="timeline-date">Current — Degree Student</span>
+                            </li>
+                            <li class="timeline-item">
+                                <h3>Foundation in Physical Science</h3>
+                                <p class="institution">Universiti Malaysia Sarawak (UNIMAS)</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h3>Secondary School Education</h3>
+                                <p class="institution">SBPI Sabak Bernam</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Interests & Hobbies Tab Panel -->
+                    <div id="interests" class="tab-panel" role="tabpanel" aria-labelledby="tab-interests">
+                        <div class="hobbies-grid">
+                            <div class="hobby-card">
+                                <h3>Technical Interests</h3>
+                                <ul>
+                                    <li>Coding &amp; Web Development</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Cybersecurity Principles</li>
+                                    <li>System Development &amp; Hosting</li>
+                                </ul>
+                            </div>
+                            <div class="hobby-card">
+                                <h3>Hobbies &amp; Personal</h3>
+                                <ul>
+                                    <li>Watching Movies</li>
+                                    <li>Playing Video Games</li>
+                                    <li>Traveling</li>
+                                    <li>Driving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-intro">Programming languages, tools, and networks core competencies.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>C++</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web Development (HTML/CSS/JS)</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Network Protocols &amp; Hosting</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <!-- JS Feature 4: Real-time Project Search -->
+                <div class="project-search-container">
+                    <input type="text" id="project-search" placeholder="Search projects by title or keyword..." aria-label="Search projects">
+                </div>
+
+                <!-- JS Feature 3: Category Filter Buttons -->
+                <div id="project-filters" class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web-development">Web Development</button>
+                    <button class="filter-btn" data-filter="app-development">App Development</button>
+                    <button class="filter-btn" data-filter="ui-design">UI Design</button>
+                    <button class="filter-btn" data-filter="server-hosting">Server Hosting</button>
+                    <button class="filter-btn" data-filter="cpp">C++</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-container">
+                    
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="app-development javascript ui-design">
+                        <div class="project-gallery">
+                            <!-- JS Feature 7: Lightbox clickable image preview -->
+                            <img src="Project 1(1).png" alt="Learning Module Dashboard Interface" class="project-img lightbox-trigger">
+                            <img src="Project 1(2).png" alt="Learning Module Quiz Scoreboard" class="project-img lightbox-trigger">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Learning Module</h3>
+                            <p class="project-description">
+                                An interactive learning module featuring mind maps, facts, and Ebooks. Includes built-in quizzes and tests with real-time score tracking and a dynamic leaderboard/podium to make studying competitive and engaging.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">App Development</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="web-development database ui-design">
+                        <div class="project-gallery">
+                            <img src="Project 2(1).png" alt="Gym App Registration Form Screen" class="project-img lightbox-trigger">
+                            <img src="Project 2(2).png" alt="Gym App Coaching Selection Interface" class="project-img lightbox-trigger">
+                            <img src="Project 2(3).png" alt="Gym App Exercise Categories View" class="project-img lightbox-trigger">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Gym App</h3>
+                            <p class="project-description">
+                                A membership portal designed for member registrations and walk-in entrances. Features personal coach session bookings and customizable exercise categories for user workout routines.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Database</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="server-hosting">
+                        <div class="project-gallery">
+                            <img src="Project 3(1).png" alt="Minecraft Server Command Console Setup" class="project-img lightbox-trigger">
+                            <img src="Project 3(2).png" alt="Playit.gg Tunneling Configuration" class="project-img lightbox-trigger">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Minecraft Server Setup</h3>
+                            <p class="project-description">
+                                Configured a local Minecraft server environment hosted on a personal device. Integrated playit.gg tunneling protocols to expose local server ports publicly for multi-player multiplayer gameplay.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Server Hosting</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="ui-design ev-car">
+                        <div class="project-gallery">
+                            <img src="Project 4(1).png" alt="EV Car Dashboard Figma Main Display Design" class="project-img lightbox-trigger">
+                            <img src="Project 4(2).png" alt="EV Car Low Battery Alert and Navigation View" class="project-img lightbox-trigger">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">EV Car Dashboard Design</h3>
+                            <p class="project-description">
+                                An interactive electric vehicle dashboard UI crafted in Figma. Designed specifically for unfamiliar navigation areas, providing battery health warnings and routing drivers to nearby charging stations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI Design</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">EV Tech</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="web-development cpp">
+                        <div class="project-gallery">
+                            <img src="Project 5(1).png" alt="Wildlife Tracking System C++ Console Menu" class="project-img lightbox-trigger">
+                            <img src="Project 5(2).png" alt="Wildlife System Sightings Report Output" class="project-img lightbox-trigger">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Wildlife Tracking System</h3>
+                            <p class="project-description">
+                                A C++ database application for logging and managing wildlife sightings. Features full CRUD (Create, Read, Update, Delete) operations and automated report generation identifying endangered species.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Web Development</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-intro">Feel free to reach out for inquiries, collaborations, or server projects.</p>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3>Direct Links</h3>
+                        
+                        <div class="email-box">
+                            <span>Email:</span>
+                            <strong id="user-email">kamal.hazman@gmail.com</strong>
+                            <!-- JS Feature 6: Copy to Clipboard Button -->
+                            <button id="copy-email-btn" class="btn btn-small" aria-label="Copy email address to clipboard">Copy Email</button>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Social Profiles</h3>
+                            <a href="https://www.linkedin.com/in/kamal-hazman-0a5223349?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn Profile</a>
+                            <a href="https://www.instagram.com/kamalhazman?mdxt=MXF6czRxODNkNHZlNw==" target="_blank" rel="noopener noreferrer" class="social-btn">Instagram Profile</a>
+                        </div>
+                    </div>
+
+                    <!-- Front-End Contact Form -->
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <h3>Send a Message</h3>
+                        
+                        <!-- JS Feature 5: Real-time form input validation -->
+                        <div class="form-group">
+                            <label for="contact-email">Your Email Address *</label>
+                            <input type="email" id="contact-email" class="form-input" required placeholder="name@example.com">
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" class="form-input" placeholder="Project Inquiry / Opportunity">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" class="form-input" rows="5" required placeholder="Type your message here..." maxlength="500"></textarea>
+                            <!-- Character Counter -->
+                            <div class="char-count"><span id="char-num">0</span> / 500 characters</div>
+                            <span class="error-msg" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Muhammad Kamal Hazman Bin Mohd Othman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Feature 9: Floating Back-to-Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page">↑</button>
+
+    <!-- JS Feature 7: Image Lightbox Popup Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+        <span id="lightbox-close" class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" alt="Enlarged project preview">
+    </div>
+
+    <!-- JS Feature 2: Floating Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js" defer></script>
+</body>
+</html>
